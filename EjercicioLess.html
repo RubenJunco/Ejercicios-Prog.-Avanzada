@@ -1,46 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="styles.less">
 </head>
 <body>
-
-<div class="container">
-<form>
- <fieldset>
-     Formulario:
- </fieldset>
- <fieldset>
-    correo:
-    <input type="text">
- </fieldset>
- <fieldset>
-    contraseña: 
-    <input type="password">
- </fieldset>
-
- <fieldset>
-    check: 
-    <hr>
-    Administrador  <input  type="checkbox"> 
-    <hr>
-    Gerente  <input  type="checkbox"> 
-    <hr>
-    Propetario  <input  type="checkbox"> 
-    <hr>
-    Agente de Ventas  <input  type="checkbox"> 
-    <hr>
-    Prospecto  <input  type="checkbox"> 
- </fieldset>
-
-
-</form>
-
-</div>
-
- 
+    <div class="form-container">
+        <form>
+            <h1>Formulario</h1>
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email">
+            
+            <label for="password">Contraseña</label>
+            <input type="password" id="password">
+            
+            <div class="roles">
+                <p>Seleccione su rol:</p>
+                <label><input type="checkbox" name="role" value="admin"> Administrador</label>
+                <label><input type="checkbox" name="role" value="gerente"> Gerente</label>
+                <label><input type="checkbox" name="role" value="propietario"> Propietario</label>
+                <label><input type="checkbox" name="role" value="ventas"> Agente de ventas</label>
+                <label><input type="checkbox" name="role" value="prospecto"> Prospecto</label>
+            </div>
+            
+            <button type="submit">Acceder</button>
+            <a href="#" class="forgot-password">¿Olvidó su contraseña?</a>
+        </form>
+    </div>
 </body>
 </html>
